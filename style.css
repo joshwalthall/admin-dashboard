@@ -11,6 +11,8 @@
     --small-pfp-size: 2.8rem;
     --large-pfp-size: 4.3rem;
     --action-btn-size: 5.7rem;
+    --large-title-size: 1.7rem;
+    --medium-title-size: 1.3rem;
 }
 
 body {
@@ -68,7 +70,6 @@ header {
     display: flex;
     gap: 1rem;
     align-items: center;
-    /* border: 1px solid black; */
 }
 
 #search-field {
@@ -89,7 +90,6 @@ header {
     padding-right: 1.5rem;
     justify-content: end;
     align-items: center;
-    font-size: 1.2rem;
 }
 
 .pfp {
@@ -102,6 +102,8 @@ header {
 }
 
 #username-medium {
+    font-size: var(--medium-title-size);
+    font-weight: 700;
     padding-left: 0.7rem;
 }
 
@@ -110,24 +112,23 @@ header {
     grid-area: 1 / 1 / 2 / 2;
     display: grid;
     grid-template-columns: 6rem 1fr;
-    grid-template-rows: 1fr 1fr;
+    align-items: center;
 }
 
 .large-pfp {
     height: var(--large-pfp-size);
     width: var(--large-pfp-size);
-    grid-area: 1 / 1 / 3 / 2;
+    grid-column-start: 1;
 }
 
 #welcome-msg {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-column-start: 2;
     align-self: end;
 }
 
 #username-large {
-    font-size: 1.5rem;
+    font-size: var(--large-title-size);
     font-weight: 700;
-    grid-area: 2 / 2 / 3 / 3;
     align-self: start;
 }
 

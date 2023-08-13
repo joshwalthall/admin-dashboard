@@ -27,8 +27,10 @@
       <div class="header-row" id="header-bottom">
         <div id="welcome-tile">
           <img class="large-pfp pfp" src="images/pug.jpg" alt="The user's profile image">
-          <span id="welcome-msg">Hi there,</span>
-          <span id="username-large">Sean Daley (@slug)</span>
+          <div class="welcome-content">
+            <span id="welcome-msg">Hi there,<br></span>
+            <span id="username-large">Sean Daley (@slug)</span>
+          </div>
         </div>
         <div id="action-buttons">
           <button class="action-button" id="btn-new">New</button>
@@ -53,8 +55,28 @@
         <div class="menu-item">Privacy</div>
       </div>
     </div>
+
     <div class="main-content">
-      Main Content
+      <div id="recipes-section" class="content-section">
+        <span class="section-title">Your Recipes</span>
+        <div id="recipes-container" class="content-container">
+          <div id="recipes-card" class="content-card">
+            <div class="recipe-card">
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div id="announcements-section" class="content-section">
+        <span class="section-title">Announcements</span>
+        <div id="announcements-card" class="content-card"></div>
+      </div>  
+      <div id="trending-section" class="content-section">
+        <span class="section-title">Trending</span>
+        <div id="trending-card" class="content-card"></div>
+      </div>
+             
     </div>
   </div>
 </body>
