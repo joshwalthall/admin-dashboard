@@ -11,21 +11,30 @@
 
 <body>
   <div class="page-container">
-    
+  
     <header>
-      <div class="header-row header-top">
+      <div class="header-row" id="header-top">
         <div class="search-bar">
           <object class="header-icon" data="icons/magnify.svg"></object>
           <input type="search" id="search-field" name="search">
         </div>
         <div class="account-icon-tray">
           <object class="header-icon" data="icons/bell-badge.svg"></object>
-          <object class="header-icon" data="icons/account-circle.svg"></object>
-          <span class="user-name">User Name</span>
+          <img class="small-pfp pfp" src="images/pug.jpg" alt="The user's profile image">
+          <span id="username-medium">Sean Daley</span>
         </div>
       </div>
-      <div class="header-row header-bottom">
-        
+      <div class="header-row" id="header-bottom">
+        <div id="welcome-tile">
+          <img class="large-pfp pfp" src="images/pug.jpg" alt="The user's profile image">
+          <span id="welcome-msg">Hi there,</span>
+          <span id="username-large">Sean Daley (@slug)</span>
+        </div>
+        <div id="action-buttons">
+          <button class="action-button" id="btn-new">New</button>
+          <button class="action-button" id="btn-upload">Upload</button>
+          <button class="action-button" id="btn-share">Share</button>
+        </div>
       </div>
     </header>
 
