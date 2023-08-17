@@ -281,6 +281,11 @@ header {
     border-radius: var(--card-radius);
     grid-template-columns: 0.5rem 1fr;
     grid-template-rows: 1fr calc(var(--icon-size) + (var(--recipe-icon-padding) * 2));
+}
+
+.recipe-card,
+#announcements-container,
+#trending-container {
     box-shadow: 0.3rem 0.3rem 0.3rem var(--light-shadow);
 }
 
